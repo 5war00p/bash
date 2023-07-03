@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: theme(backgroundColor.aubergine.dark);
+}
