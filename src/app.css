@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 html {
-    font-family: 'Ubuntu Mono', monospace;
-    background-color: theme(backgroundColor.aubergine.dark);
+	font-family: 'Ubuntu Mono', monospace;
+	background-color: theme(backgroundColor.aubergine.dark);
 }
