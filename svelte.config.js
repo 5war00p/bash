@@ -16,7 +16,7 @@ const config = {
 			utils: 'src/lib/utils/*',
 			icons: 'src/lib/icons/*',
 			store: 'src/lib/store/index.ts',
-			components: 'src/lib/components/*',
+			components: 'src/lib/components/*'
 		}
 	}
 }

@@ -8,9 +8,7 @@
 	let queryValue = ''
 	query.subscribe((val) => (queryValue = val))
 
-	$: isCommandExits = (
-		Object.values(COMMANDS) as string[]
-	).includes(queryValue)
+	$: isCommandExits = (Object.values(COMMANDS) as string[]).includes(queryValue)
 </script>
 
 <Header />
