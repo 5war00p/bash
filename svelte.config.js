@@ -15,8 +15,8 @@ const config = {
 		alias: {
 			utils: 'src/lib/utils/*',
 			icons: 'src/lib/icons/*',
+			data: 'src/lib/data/index.ts',
 			store: 'src/lib/store/index.ts',
-			data: 'src/lib/data/*',
 			components: 'src/lib/components/*'
 		}
 	}
