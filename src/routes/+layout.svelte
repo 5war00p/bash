@@ -1,14 +1,11 @@
 <script lang="ts">
 	import '../app.css'
-	import { query } from 'store'
 	import NotFound from 'components/NotFound.svelte'
 	import Header from '../lib/components/Header.svelte'
-	import { COMMANDS } from 'utils/constants'
+	import { valuesOfCommands } from 'utils/constants'
+	import { query } from 'store'
 
-	let queryValue = ''
-	query.subscribe((val) => (queryValue = val))
-
-	$: isCommandExits = (Object.values(COMMANDS) as string[]).includes(queryValue)
+	$: isCommandExits = (valuesOfCommands as string[]).includes($query)
 </script>
 
 <Header />

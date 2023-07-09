@@ -3,10 +3,12 @@
 	import Cursor from './Cursor.svelte'
 	import IconKeyReturn from 'icons/IconKeyReturn.svelte'
 	import { query } from 'store'
+	import rotatePlaceholders from 'utils/rotatePlaceholders'
 
 	let textSpan: string
 	let cursor: HTMLSpanElement
 	let queryInput: HTMLInputElement
+	let placeholder: HTMLSpanElement
 	let isHighlighted = false
 	let isTyping = false
 
@@ -35,6 +37,8 @@
 			queryInput.removeEventListener('select', onSelectHandler)
 		}
 	})
+
+	$: rotatePlaceholders(placeholder)
 </script>
 
 <div class="flex items-center ml-3">
@@ -55,7 +59,9 @@
 		</div>
 	{:else}
 		<Cursor bind:cursor />
-		<span class="pt-1 italic text-3xl text-gray-500"> query </span>
+		<span bind:this={placeholder} class="pt-1 italic text-3xl text-gray-500">
+			query here...
+		</span>
 	{/if}
 </div>
 <input

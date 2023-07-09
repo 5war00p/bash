@@ -8,3 +8,5 @@ export enum COMMANDS {
 	PROJECTS = 'projects',
 	SOCIAL = 'social'
 }
+
+export const valuesOfCommands: string[] = Object.values(COMMANDS)
