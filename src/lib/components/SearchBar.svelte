@@ -48,7 +48,7 @@
 				isHighlighted
 					? 'text-aubergine-dark bg-white'
 					: 'text-white bg-transparent'
-			} pt-1 text-3xl`}
+			} text-3xl`}
 		>
 			{textSpan}
 		</span>
@@ -59,7 +59,7 @@
 		</div>
 	{:else}
 		<Cursor bind:cursor />
-		<span bind:this={placeholder} class="pt-1 italic text-3xl text-gray-500">
+		<span bind:this={placeholder} class="italic text-3xl text-gray-500">
 			query here...
 		</span>
 	{/if}

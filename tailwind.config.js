@@ -5,8 +5,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				blue: '#000080',
-				green: '#55FF55',
+				blue: '#5555ff',
+				green: '#55ff55',
 				aubergine: {
 					light: '#77216F',
 					mid: '#5E2750',
