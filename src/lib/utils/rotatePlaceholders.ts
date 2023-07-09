@@ -7,7 +7,7 @@ const extendedPlaceholders = ['query here...', ...valuesOfCommands]
  * @param HTMLSpanElement
  * Updates textContent of a given span tag in a regular interval
  */
-const rotatePlaceholders = (element: HTMLSpanElement) => {
+const rotatePlaceholders = (element: HTMLSpanElement): void => {
 	if (!element) return
 	const loop = (i = 0) => {
 		if (i < extendedPlaceholders.length) {
