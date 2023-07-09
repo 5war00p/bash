@@ -1,8 +1,9 @@
 <script>
+	import { valuesOfCommands } from 'utils/constants'
 	import SearchBar from './SearchBar.svelte'
 	import { query } from 'store'
 
-	$: path = $query ? `/${$query}` : '~'
+	$: path = $query && $query in valuesOfCommands ? `/${$query}` : '~'
 </script>
 
 <div class="flex m-2 items-center text-center">

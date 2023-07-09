@@ -6,7 +6,8 @@ export enum COMMANDS {
 	EDUCATION = 'education',
 	HELP = 'help',
 	PROJECTS = 'projects',
-	SOCIAL = 'social'
+	SOCIAL = 'social',
+	CONTACT = 'contact'
 }
 
 export const valuesOfCommands: string[] = Object.values(COMMANDS)
