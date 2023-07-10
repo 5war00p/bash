@@ -11,7 +11,7 @@ export default {
 					light: '#77216F',
 					mid: '#5E2750',
 					dark: '#2C001E'
-				}
+				},
 			},
 			backgroundColor: {
 				aubergine: {
