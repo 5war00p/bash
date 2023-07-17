@@ -5,6 +5,7 @@
 	import Contact from 'components/Contact.svelte'
 	import Education from 'components/Education.svelte'
 	import About from 'components/About.svelte'
+	import Help from 'components/Help.svelte'
 </script>
 
 {#if $query === COMMANDS.SOCIAL}
@@ -15,4 +16,8 @@
 	<Contact />
 {:else if $query === COMMANDS.EDUCATION}
 	<Education />
+{:else if $query === COMMANDS.HELP}
+	<Help />
+{:else if $query === COMMANDS.EMPTY || $query === COMMANDS.ROOT}
+	<!-- Home -->
 {/if}
