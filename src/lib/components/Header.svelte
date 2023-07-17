@@ -2,8 +2,13 @@
 	import { valuesOfCommands } from 'utils/constants'
 	import SearchBar from './SearchBar.svelte'
 	import { query } from 'store'
-
-	$: path = $query && $query in valuesOfCommands ? `/${$query}` : '~'
+	// ! Ignoring this message as svelte can handle understands reactive variable
+	// @ts-ignore
+	$: path = !$query
+		? '~'
+		: valuesOfCommands.includes($query)
+		? `/${$query}`
+		: path
 </script>
 
 <div class="flex m-2 items-center text-center">

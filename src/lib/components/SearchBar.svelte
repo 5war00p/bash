@@ -82,7 +82,11 @@
 		}
 
 		if (e.key === 'Enter' || e.key === 'Return') {
-			query.set(textSpan)
+			if (textSpan) query.set(textSpan)
+
+			// resetting input field on query submission
+			textSpan = ''
+			e.currentTarget.value = ''
 		}
 	}}
 	on:blur={() => {
@@ -90,6 +94,5 @@
 	}}
 	on:input={(e) => {
 		textSpan = e.currentTarget.value
-		if (!textSpan) query.set('')
 	}}
 />
