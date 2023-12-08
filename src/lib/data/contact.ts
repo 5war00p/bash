@@ -3,7 +3,7 @@ import IconPhone from 'icons/IconPhone.svelte'
 
 const contactDetails = [
 	{
-		title: 'Personal Mail',
+		title: 'Email',
 		value: 'maddisaiswaroop@gmail.com',
 		icon: IconAt
 	},
