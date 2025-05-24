@@ -2,7 +2,7 @@
 	import { about } from 'data'
 </script>
 
-<div class="text-green-400 rounded p-6 font-mono shadow-lg text-gray-500">
+<div class="text-green-400 rounded p-6 font-mono text-gray-500">
 	<div class="mb-4">
 		<span class="text-white font-bold">Command List</span>
 	</div>

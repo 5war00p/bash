@@ -1,51 +1,13 @@
 export enum COMMANDS {
 	EMPTY = '',
 	ABOUT = 'about',
-	WORK = 'work',
 	ACADEMICS = 'academics',
-	HELP = 'help',
+	WORK = 'work',
 	PROJECTS = 'projects',
 	SOCIAL = 'social',
 	CONTACT = 'contact',
+	HELP = 'help',
 	ROOT = '~'
-}
-
-export enum SKILLS {
-	MONGODB = 'MongoDB',
-	NODEJS = 'Node.js',
-	JS = 'JavaScript',
-	TS = 'TypeScript',
-	REACTJS = 'React.js',
-	NEXTJS = 'Next.js',
-	SVELTE = 'Svelte',
-	POSTGRESSQL = 'PostgresSQL',
-	ELECTRONJS = 'Electron.js',
-	APPLESCRIPTS = 'AppleScripts',
-	REDUXJS = 'Redux.js',
-	GRAPHQL = 'GraphQL',
-	TAILWINDCSS = 'TailwindCSS',
-	CHAKRAUI = 'ChakraUI',
-	PWA = 'Progressive Web Application (PWA)',
-	ASTROJS = 'Astro.js',
-	CLOUDFLARE = 'Cloudflare',
-	AWS = 'AWS',
-	CI_CD = 'CI/CD',
-	GITPOD = 'GitPod',
-	TRAVIS_CI = 'TravisCI',
-	GH_ACTIONS = 'Github Actions',
-	WEB3 = 'Web3',
-	DAPPS = 'DApps',
-	ETHCALL = 'Ethcall',
-	ETHERS = 'Ethers',
-	THIRDWEBJS = 'Thirdweb.js',
-	VIEM = 'Viem',
-	BLOCKCHAIN = 'Blockchain',
-	T3 = 'T3',
-	PYTHON = 'Python',
-	COCKROACHDB = 'CockroachDB',
-	PRISMA_ORM = 'Prisma',
-	OPENAI = 'OpenAI',
-	LANGCHAIN = 'LangChain'
 }
 
 export const valuesOfCommands: string[] = Object.values(COMMANDS)

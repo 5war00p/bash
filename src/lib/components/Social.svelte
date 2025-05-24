@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="my-10 mx-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:mx-20 lg:mx-40 xl:mx-80"
+	class="my-10 mx-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:mx-5 md:my-20 lg:mx-20 xl:mx-40"
 >
 	{#each socialProfiles as { icon, brand, url, handler } (brand)}
 		{@const Icon = icon}

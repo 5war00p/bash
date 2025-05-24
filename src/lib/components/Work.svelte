@@ -4,7 +4,7 @@
 
 <div class="mx-auto py-10 w-11/12 sm:w-5/6">
 	<ul role="list" class="space-y-10 sm:space-y-16">
-		{#each work as { jobTitle, companyName, duration, employmentType, locationType, description, skills, isCurrentlyWorking }, index (index)}
+		{#each work as { jobTitle, companyName, duration, employmentType, locationType, description, skills, isCurrentlyWorking, descriptionStart, noBullets, website }, index (index)}
 			<li class="relative flex flex-col sm:flex-row gap-y-4 gap-x-4">
 				{#if index < work.length - 1}
 					<div
@@ -37,9 +37,14 @@
 							<p class="font-medium text-xl sm:text-2xl text-red-700 truncate">
 								{jobTitle}
 							</p>
-							<p class="text-lg sm:text-xl font-semibold">
-								{`@${companyName}`}
-							</p>
+							<a
+								class="text-lg sm:text-xl font-semibold hover:underline-offset-1 hover:underline"
+								href={website}
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								{companyName}
+							</a>
 						</div>
 						<div class="flex flex-wrap gap-1">
 							<span
@@ -56,7 +61,22 @@
 							>
 						</div>
 					</div>
-					<p class="text-base sm:text-lg">{description}</p>
+					{#if descriptionStart}
+						<p class="text-base sm:text-lg">{descriptionStart}</p>
+					{/if}
+					{#if Array.isArray(description)}
+						<ol
+							class={`text-base sm:text-lg space-y-1 ${
+								noBullets ? '' : 'list-decimal list-inside'
+							} ${descriptionStart ? 'pl-4' : ''}`}
+						>
+							{#each description as desc}
+								<li>{desc}</li>
+							{/each}
+						</ol>
+					{:else}
+						<p class="text-base sm:text-lg">{description}</p>
+					{/if}
 					<div class="flex flex-wrap gap-1">
 						{#each skills as skill}
 							<span

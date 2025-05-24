@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex m-2 items-center text-center">
-	<h1 class="text-xl sm:text-3xl text-green">
+	<h1 class="text-xl sm:text-2xl text-green">
 		{about.username}@{about.hostname}
 	</h1>
 	<span class="flex text-lg sm:text-2xl gap-px">
