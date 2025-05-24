@@ -1,25 +1,17 @@
-const academics = [
-	{
-		icon: '🎓',
-		title: "Graduation (Bachelor's)",
-		institute: 'Rajiv Gandhi University of Knowledge Technologies, Nuzvid',
-		duration: '2018-2022',
-		cgpa: '8.9/10'
-	},
-	{
-		icon: '📖',
-		title: 'High School (PUC / Intermediate)',
-		institute: 'Rajiv Gandhi University of Knowledge Technologies, Nuzvid',
-		duration: '2016-2018',
-		cgpa: '8.55/10'
-	},
-	{
-		icon: '📚',
-		title: 'Secondary School (SSC)',
-		institute: 'Government High School, Pathapatnam',
-		duration: '2015-2016',
-		cgpa: '9.7/10'
-	}
-]
+import academicsData from './academics.json'
+
+interface Academics {
+	icon: string
+	title: string
+	institute: string
+	duration: string
+	cgpa: string
+}
+
+/**
+ * Interface representing an academic record.
+ * Makes sure imported JSON matches this structure.
+ */
+const academics: Array<Academics> = academicsData
 
 export default academics

@@ -1,5 +1,6 @@
 <script>
-	import { about } from 'data'
+	import { aboutData } from 'data'
+	const { username } = aboutData
 </script>
 
 <div class="text-green-400 rounded p-6 font-mono text-gray-500">
@@ -23,7 +24,7 @@
 	List social media links
 
 <span class="text-green-500">$</span> about
-	About {about.username}
+	About {username}
 
 <span class="text-green-500">$</span> contact
 	Contact information

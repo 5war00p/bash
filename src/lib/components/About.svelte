@@ -1,5 +1,5 @@
 <script>
-	import { about } from 'data'
+	import { aboutData } from 'data'
 </script>
 
 <div
@@ -9,16 +9,16 @@
 		<div class="flex flex-col mx-auto max-w-2xl lg:mx-0 gap-8">
 			<h2 class="text-4xl font-bold tracking-tight text-warm-grey sm:text-6xl">
 				I'm <br />
-				{about.name}
+				{aboutData.name}
 			</h2>
 			<p class="text-lg leading-8 text-gray-600 text-justify">
-				{about.bio}
+				{aboutData.bio}
 			</p>
 		</div>
 	</div>
 	<img
 		alt="profile-pic"
-		src={about.avatarUrl}
+		src={aboutData.avatarUrl}
 		class="w-40 h-40 sm:w-64 sm:h-64 lg:w-[550px] lg:h-[550px] object-cover rounded-full mb-8 lg:mb-0"
 	/>
 </div>

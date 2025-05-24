@@ -1,8 +1,15 @@
-import about from './about'
-import academics from './academics'
-import contactDetails from './contact'
-import projects from './projects'
-import socialProfiles from './social'
-import work from './work'
+import aboutData from './about'
+import academicsData from './academics'
+import contactData from './contact'
+import projectsData from './projects'
+import socialData from './social'
+import workData from './work'
 
-export { academics, about, contactDetails, socialProfiles, work, projects }
+export {
+	academicsData,
+	aboutData,
+	contactData,
+	socialData,
+	workData,
+	projectsData
+}

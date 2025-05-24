@@ -1,22 +1,33 @@
+import contactData from './contact.json'
+
 import IconAt from 'icons/IconAt.svelte'
 import IconPhone from 'icons/IconPhone.svelte'
 
-const contactDetails = [
-	{
-		title: 'Email',
-		value: 'maddisaiswaroop@gmail.com',
-		icon: IconAt
-	},
-	{
-		title: 'Phone 1',
-		value: '+91 7892290914',
-		icon: IconPhone
-	},
-	{
-		title: 'Phone 2',
-		value: '+91 9490759561',
-		icon: IconPhone
-	}
-]
+type Icon = typeof IconAt | typeof IconPhone
 
-export default contactDetails
+interface Contact {
+	title: string
+	value: string
+	icon: Icon
+}
+
+const getIcon = (title: string): Icon => {
+	if (title.startsWith('Phone')) {
+		return IconPhone
+	}
+	if (title === 'Email') {
+		return IconAt
+	}
+	throw new Error(`Unknown contact title: ${title}`)
+}
+
+/**
+ * Interface representing an academic record.
+ * Makes sure imported JSON matches this structure.
+ */
+const contact: Array<Contact> = contactData.map((detail) => ({
+	...detail,
+	icon: getIcon(detail.title)
+}))
+
+export default contact

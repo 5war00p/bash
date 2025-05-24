@@ -1,12 +1,12 @@
-<script lang="ts">
-	import { work } from 'data'
+<script>
+	import { workData } from 'data'
 </script>
 
 <div class="mx-auto py-10 w-11/12 sm:w-5/6">
 	<ul role="list" class="space-y-10 sm:space-y-16">
-		{#each work as { jobTitle, companyName, duration, employmentType, locationType, description, skills, isCurrentlyWorking, descriptionStart, noBullets, website }, index (index)}
+		{#each workData as { jobTitle, companyName, duration, employmentType, locationType, description, skills, isCurrentlyWorking, descriptionStart, noBullets, website }, index (index)}
 			<li class="relative flex flex-col sm:flex-row gap-y-4 gap-x-4">
-				{#if index < work.length - 1}
+				{#if index < workData.length - 1}
 					<div
 						class="absolute left-2 top-12 w-6 justify-center -bottom-14 hidden sm:flex"
 					>
@@ -24,7 +24,7 @@
 					<div
 						class="flex justify-center text-gray-400 h-6 w-6 rounded-full bg-gray-200 ring-1 ring-gray-400"
 					>
-						{work.length - index}
+						{workData.length - index}
 					</div>
 				</div>
 				<div

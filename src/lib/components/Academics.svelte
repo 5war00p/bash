@@ -1,12 +1,12 @@
 <script>
-	import { academics } from 'data'
+	import { academicsData } from 'data'
 </script>
 
 <div class="mx-auto py-10 w-11/12 sm:w-5/6">
 	<ul role="list" class="space-y-16">
-		{#each academics as { title, institute, duration, cgpa, icon }, index (index)}
+		{#each academicsData as { title, institute, duration, cgpa, icon }, index (index)}
 			<li class="relative flex gap-x-4">
-				{#if index < academics.length - 1}
+				{#if index < academicsData.length - 1}
 					<div
 						class="absolute left-2 top-12 w-6 justify-center -bottom-14 hidden sm:flex"
 					>

@@ -1,12 +1,12 @@
 <script>
-	import { contactDetails } from 'data'
+	import { contactData } from 'data'
 	import IconCopySimple from 'icons/IconCopySimple.svelte'
 </script>
 
 <div
 	class="mx-4 my-8 flex flex-col space-y-4 sm:mx-8 sm:my-12 md:mx-20 md:my-20"
 >
-	{#each contactDetails as { icon, title, value }, index (index)}
+	{#each contactData as { icon, title, value }, index (index)}
 		{@const Icon = icon}
 		{@const href = title === 'Email' ? `mailto:${value}` : `tel:${value}`}
 		<div

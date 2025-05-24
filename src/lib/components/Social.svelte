@@ -1,11 +1,11 @@
 <script>
-	import { socialProfiles } from 'data'
+	import { socialData } from 'data'
 </script>
 
 <div
 	class="my-10 mx-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:mx-5 md:my-20 lg:mx-20 xl:mx-40"
 >
-	{#each socialProfiles as { icon, brand, url, handler } (brand)}
+	{#each socialData as { icon, brand, url, handler } (brand)}
 		{@const Icon = icon}
 		<div
 			class="relative flex items-center space-x-5 rounded-lg border border-slate-100 px-3 py-4 hover:border-slate-400"

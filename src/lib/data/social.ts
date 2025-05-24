@@ -1,3 +1,5 @@
+import socialData from './social.json'
+
 import IconDiscord from 'icons/IconDiscord.svelte'
 import IconGithub from 'icons/IconGithub.svelte'
 import IconInstagram from 'icons/IconInstagram.svelte'
@@ -9,67 +11,60 @@ import IconTelegram from 'icons/IconTelegram.svelte'
 import IconX from 'icons/IconX.svelte'
 import IconWhatsapp from 'icons/IconWhatsapp.svelte'
 
-const socialProfiles = [
-	{
-		brand: 'Github',
-		handler: '@5war00p',
-		url: 'https://github.com/5war00p',
-		icon: IconGithub
-	},
-	{
-		brand: 'StackOverflow',
-		handler: '5war00p',
-		url: 'https://stackoverflow.com/users/11784338/5war00p',
-		icon: IconStackOverflow
-	},
-	{
-		brand: 'Linkedin',
-		handler: '@5war00p',
-		url: 'https://www.linkedin.com/in/5war00p',
-		icon: IconLinkedin
-	},
-	{
-		brand: 'Discord',
-		handler: '5war00p#0739',
-		url: 'https://discordapp.com/users/531764311220027392',
-		icon: IconDiscord
-	},
-	{
-		brand: 'Reddit',
-		handler: '@5war00p',
-		url: 'https://www.reddit.com/user/5war00p',
-		icon: IconReddit
-	},
-	{
-		brand: 'Twitter',
-		handler: '@5war00p',
-		url: 'https://x.com/5war00p',
-		icon: IconX
-	},
-	{
-		brand: 'Instagram',
-		handler: '@5war00p',
-		url: 'https://instagram.com/5war00p',
-		icon: IconInstagram
-	},
-	{
-		brand: 'Telegram',
-		handler: '@mr5war00p',
-		url: 'https://t.me/mr5war00p',
-		icon: IconTelegram
-	},
-	{
-		brand: 'WhatsApp',
-		handler: 'Swaroop',
-		url: 'https://wa.me/919490759561',
-		icon: IconWhatsapp
-	},
-	{
-		brand: 'LearnWeb3',
-		handler: '@5war00p',
-		url: 'https://learnweb3.io/u/5war00p',
-		icon: IconLearnWeb3
-	}
-]
+type Icon =
+	| typeof IconGithub
+	| typeof IconStackOverflow
+	| typeof IconLinkedin
+	| typeof IconDiscord
+	| typeof IconReddit
+	| typeof IconX
+	| typeof IconInstagram
+	| typeof IconTelegram
+	| typeof IconWhatsapp
+	| typeof IconLearnWeb3
 
-export default socialProfiles
+interface SocialProfile {
+	brand: string
+	handler: string
+	url: string
+	icon: Icon
+}
+
+const getIcon = (brand: string): Icon => {
+	switch (brand) {
+		case 'Github':
+			return IconGithub
+		case 'StackOverflow':
+			return IconStackOverflow
+		case 'Linkedin':
+			return IconLinkedin
+		case 'Discord':
+			return IconDiscord
+		case 'Reddit':
+			return IconReddit
+		case 'Twitter':
+			return IconX
+		case 'Instagram':
+			return IconInstagram
+		case 'Telegram':
+			return IconTelegram
+		case 'WhatsApp':
+			return IconWhatsapp
+		case 'LearnWeb3':
+			return IconLearnWeb3
+		default:
+			throw new Error(`Unknown brand: ${brand}`)
+	}
+}
+
+/**
+ * Interface representing an academic record.
+ * Makes sure imported JSON matches this structure.
+ */
+const social: Array<SocialProfile> = socialData.map((profile) => ({
+	...profile,
+	brand: profile.brand,
+	icon: getIcon(profile.brand)
+}))
+
+export default social
