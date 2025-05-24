@@ -6,7 +6,7 @@ import IconLinkedin from 'icons/IconLinkedin.svelte'
 import IconReddit from 'icons/IconReddit.svelte'
 import IconStackOverflow from 'icons/IconStackOverflow.svelte'
 import IconTelegram from 'icons/IconTelegram.svelte'
-import IconTwitter from 'icons/IconTwitter.svelte'
+import IconX from 'icons/IconX.svelte'
 import IconWhatsapp from 'icons/IconWhatsapp.svelte'
 
 const socialProfiles = [
@@ -43,8 +43,8 @@ const socialProfiles = [
 	{
 		brand: 'Twitter',
 		handler: '@5war00p',
-		url: 'https://twitter.com/5war00p',
-		icon: IconTwitter
+		url: 'https://x.com/5war00p',
+		icon: IconX
 	},
 	{
 		brand: 'Instagram',

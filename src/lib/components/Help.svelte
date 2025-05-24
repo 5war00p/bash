@@ -1,43 +1,31 @@
-<div class="text-white">
-	<div class="px-4 sm:px-0">
-		<h3 class="text-base font-semibold leading-7">Applicant Information</h3>
-		<p class="mt-1 max-w-2xl text-sm leading-6">
-			Personal details and application.
-		</p>
+<script>
+	import { about } from 'data'
+</script>
+
+<div class="text-green-400 rounded p-6 font-mono shadow-lg text-gray-500">
+	<div class="mb-4">
+		<span class="text-white font-bold">Command List</span>
 	</div>
-	<div class="mt-6">
-		<dl>
-			<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-				<dt class="text-sm font-medium leading-6">Full name</dt>
-				<dd class="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-					Margot Foster
-				</dd>
-			</div>
-			<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-				<dt class="text-sm font-medium leading-6">Application for</dt>
-				<dd class="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-					Backend Developer
-				</dd>
-			</div>
-			<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-				<dt class="text-sm font-medium leading-6">Email address</dt>
-				<dd class="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-					margotfoster@example.com
-				</dd>
-			</div>
-			<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-				<dt class="text-sm font-medium leading-6">Salary expectation</dt>
-				<dd class="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">$120,000</dd>
-			</div>
-			<div class="px-4 py-6 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-0">
-				<dt class="text-sm font-medium leading-6">About</dt>
-				<dd class="mt-1 text-sm leading-6 sm:col-span-2 sm:mt-0">
-					Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt
-					cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint.
-					Sit id mollit nulla mollit nostrud in ea officia proident. Irure
-					nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
-				</dd>
-			</div>
-		</dl>
-	</div>
+	<pre class="whitespace-pre-wrap">
+<span class="text-green-500">$</span> help
+	List available commands
+
+<span class="text-green-500">$</span> academics
+	List academic qualifications
+
+<span class="text-green-500">$</span> work
+	List work experiences
+
+<span class="text-green-500">$</span> projects
+	List projects and contributions
+
+<span class="text-green-500">$</span> social
+	List social media links
+
+<span class="text-green-500">$</span> about
+	About {about.username}
+
+<span class="text-green-500">$</span> contact
+	Contact information
+	</pre>
 </div>

@@ -1,8 +1,8 @@
 <script>
-	import work from '$lib/data/work'
+	import { work } from 'data'
 </script>
 
-<div class="m-auto pt-10 w-5/6">
+<div class="m-auto py-10 w-5/6">
 	<ul role="list" class="space-y-16">
 		{#each work as { jobTitle, companyName, duration, employmentType, locationType, description, skills, isCurrentlyWorking }, index (index)}
 			<li class="relative flex gap-x-4">
@@ -27,13 +27,13 @@
 						{work.length - index}
 					</div>
 				</div>
-				<div class="flex-auto text-gray-500 space-y-4">
+				<div class="flex-auto text-gray-500 space-y-4 py-1.5 sm:py-1">
 					<div class="flex items-center gap-2 justify-between">
 						<div>
-							<p class="font-medium text-3xl text-red-700 truncate">
+							<p class="font-medium text-2xl text-red-700 truncate">
 								{jobTitle}
 							</p>
-							<p class="text-2xl font-semibold">
+							<p class="text-xl font-semibold">
 								{`@${companyName}`}
 							</p>
 						</div>

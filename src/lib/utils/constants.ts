@@ -1,13 +1,13 @@
 export enum COMMANDS {
 	EMPTY = '',
-	ROOT = 'root',
 	ABOUT = 'about',
 	WORK = 'work',
 	ACADEMICS = 'academics',
 	HELP = 'help',
 	PROJECTS = 'projects',
 	SOCIAL = 'social',
-	CONTACT = 'contact'
+	CONTACT = 'contact',
+	ROOT = '~'
 }
 
 export enum SKILLS {

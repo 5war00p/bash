@@ -48,18 +48,21 @@
 				isHighlighted
 					? 'text-aubergine-dark bg-white'
 					: 'text-white bg-transparent'
-			} text-3xl`}
+			} text-lg sm:text-2xl`}
 		>
 			{textSpan}
 		</span>
 		<Cursor bind:cursor />
 
-		<div class="absolute right-0 flex py-1.5 pr-1.5">
+		<div class="absolute right-0 sm:flex py-1.5 pr-1.5 hidden">
 			<IconKeyReturn className={'w-8 h-8'} />
 		</div>
 	{:else}
 		<Cursor bind:cursor />
-		<span bind:this={placeholder} class="italic text-3xl text-gray-500">
+		<span
+			bind:this={placeholder}
+			class="italic text-lg sm:text-2xl text-gray-500"
+		>
 			query here...
 		</span>
 	{/if}
@@ -69,7 +72,7 @@
 	type="text"
 	placeholder="query"
 	value=""
-	class="w-0 h-0 opactity-0 text-transparent bg-transparent pl-0 pt-1 placeholder:italic border-0 focus:ring-0 focus:outline-none placeholder:text-3xl caret-transparent"
+	class="w-0 h-0 opactity-0 text-transparent bg-transparent pl-0 pt-1 placeholder:italic border-0 focus:ring-0 focus:outline-none placeholder:text-2xl caret-transparent"
 	maxlength="80"
 	tabindex="0"
 	on:keyup={() => (isTyping = false)}
@@ -82,7 +85,7 @@
 		}
 
 		if (e.key === 'Enter' || e.key === 'Return') {
-			if (textSpan) query.set(textSpan)
+			if (textSpan) query.set(textSpan.trim())
 
 			// resetting input field on query submission
 			textSpan = ''
