@@ -1,17 +1,20 @@
 const academics = [
 	{
+		icon: '🎓',
 		title: "Graduation (Bachelor's)",
 		institute: 'Rajiv Gandhi University of Knowledge Technologies, Nuzvid',
 		duration: '2018-2022',
 		cgpa: '8.9/10'
 	},
 	{
+		icon: '📖',
 		title: 'High School (PUC / Intermediate)',
 		institute: 'Rajiv Gandhi University of Knowledge Technologies, Nuzvid',
 		duration: '2016-2018',
 		cgpa: '8.55/10'
 	},
 	{
+		icon: '📚',
 		title: 'Secondary School (SSC)',
 		institute: 'Government High School, Pathapatnam',
 		duration: '2015-2016',
