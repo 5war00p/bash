@@ -16,24 +16,24 @@
 							class="h-6 w-6 rounded-md bg-gray-200 ring-1 ring-gray-400 object-cover"
 						/>
 						<button
-							class="font-medium text-red-700 truncate col-start-1 row-start-1 text-lg sm:text-xl hover:underline hover:underline-offset-1"
+							class="font-medium text-red-700 truncate col-start-1 row-start-1 text-xl sm:text-2xl hover:underline hover:underline-offset-1"
 							on:mousedown|preventDefault={() => window.open(website, '_blank')}
 						>
 							{company}
 						</button>
 					</div>
-					<p class="text-base sm:text-lg">{description}</p>
+					<p class="text-lg sm:text-xl">{description}</p>
 					{#each projects as { title, description: projDesc, url, skills }, index}
-						<div class="mb-2">
+						<div class="mb-6">
 							<a
 								href={url}
 								target="_blank"
 								rel="noopener noreferrer"
-								class="font-semibold text-blue-700 hover:underline text-base sm:text-lg"
+								class="font-semibold text-blue-700 hover:underline text-lg sm:text-xl"
 							>
 								{index + 1}. {title}
 							</a>
-							<p class="text-sm sm:text-base text-gray-600">{projDesc}</p>
+							<p class="text-base sm:text-lg text-gray-600">{projDesc}</p>
 							<div class="flex flex-wrap gap-1 my-2">
 								{#each skills as skill}
 									<span
