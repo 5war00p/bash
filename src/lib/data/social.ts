@@ -58,7 +58,7 @@ const getIcon = (brand: string): Icon => {
 }
 
 /**
- * Interface representing an academic record.
+ * Interface representing a social profile record.
  * Makes sure imported JSON matches this structure.
  */
 const social: Array<SocialProfile> = socialData.map((profile) => ({

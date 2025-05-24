@@ -14,6 +14,10 @@ interface Work {
 	descriptionStart?: string
 }
 
+/**
+ * Interface representing a work experience record.
+ * Makes sure imported JSON matches this structure.
+ */
 const work: Array<Work> = workData
 
 export default work

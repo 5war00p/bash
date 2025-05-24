@@ -8,7 +8,7 @@ interface Project {
 }
 
 /**
- * Interface representing an academic record.
+ * Interface representing a project record.
  * Makes sure imported JSON matches this structure.
  */
 const projects: Array<Project> = projectData

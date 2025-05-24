@@ -9,7 +9,7 @@ interface About {
 }
 
 /**
- * Interface representing an academic record.
+ * Interface representing an about object.
  * Makes sure imported JSON matches this structure.
  */
 const about: About = aboutData

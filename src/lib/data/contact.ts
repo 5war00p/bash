@@ -22,7 +22,7 @@ const getIcon = (title: string): Icon => {
 }
 
 /**
- * Interface representing an academic record.
+ * Interface representing a contact record.
  * Makes sure imported JSON matches this structure.
  */
 const contact: Array<Contact> = contactData.map((detail) => ({
