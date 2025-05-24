@@ -38,13 +38,15 @@
 								{jobTitle}
 							</p>
 							{#if website}
-								<button
+								<a
+									href={website}
+									target="_blank"
+									rel="noopener noreferrer"
 									class="text-lg sm:text-xl font-semibold hover:underline-offset-1 hover:underline"
-									on:mousedown|preventDefault={() =>
-										window.open(website, '_blank')}
+									on:mousedown|preventDefault
 								>
 									{companyName}
-								</button>
+								</a>
 							{:else}
 								<p class="text-lg sm:text-xl font-semibold">
 									{companyName}

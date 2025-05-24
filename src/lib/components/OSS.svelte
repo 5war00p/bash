@@ -15,12 +15,15 @@
 							alt="{company} logo"
 							class="h-6 w-6 rounded-md bg-gray-200 ring-1 ring-gray-400 object-cover"
 						/>
-						<button
+						<a
+							href={website}
+							target="_blank"
+							rel="noopener noreferrer"
 							class="font-medium text-red-700 truncate col-start-1 row-start-1 text-xl sm:text-2xl hover:underline hover:underline-offset-1"
-							on:mousedown|preventDefault={() => window.open(website, '_blank')}
+							on:mousedown|preventDefault
 						>
 							{company}
-						</button>
+						</a>
 					</div>
 					<p class="text-lg sm:text-xl">{description}</p>
 					{#each projects as { title, description: projDesc, url, skills }, index}
@@ -30,9 +33,11 @@
 								target="_blank"
 								rel="noopener noreferrer"
 								class="font-semibold text-blue-700 hover:underline text-lg sm:text-xl"
+								on:mousedown|preventDefault
 							>
 								{index + 1}. {title}
 							</a>
+
 							<p class="text-base sm:text-lg text-gray-600">{projDesc}</p>
 							<div class="flex flex-wrap gap-1 my-2">
 								{#each skills as skill}
