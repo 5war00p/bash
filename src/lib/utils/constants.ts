@@ -3,6 +3,7 @@ export enum COMMANDS {
 	ABOUT = 'about',
 	ACADEMICS = 'academics',
 	WORK = 'work',
+	OSS = 'oss',
 	PROJECTS = 'projects',
 	SOCIAL = 'social',
 	CONTACT = 'contact',

@@ -8,6 +8,7 @@
 	import Help from 'components/Help.svelte'
 	import Projects from 'components/Projects.svelte'
 	import Work from 'components/Work.svelte'
+	import OSS from 'components/OSS.svelte'
 </script>
 
 {#if $query === COMMANDS.ACADEMICS}
@@ -20,6 +21,8 @@
 	<Help />
 {:else if $query === COMMANDS.PROJECTS}
 	<Projects />
+{:else if $query === COMMANDS.OSS}
+	<OSS />
 {:else if $query === COMMANDS.SOCIAL}
 	<Social />
 {:else if $query === COMMANDS.WORK}
