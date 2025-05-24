@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { work } from 'data'
 </script>
 
@@ -37,14 +37,19 @@
 							<p class="font-medium text-xl sm:text-2xl text-red-700 truncate">
 								{jobTitle}
 							</p>
-							<a
-								class="text-lg sm:text-xl font-semibold hover:underline-offset-1 hover:underline"
-								href={website}
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								{companyName}
-							</a>
+							{#if website}
+								<button
+									class="text-lg sm:text-xl font-semibold hover:underline-offset-1 hover:underline"
+									on:mousedown|preventDefault={() =>
+										window.open(website, '_blank')}
+								>
+									{companyName}
+								</button>
+							{:else}
+								<p class="text-lg sm:text-xl font-semibold">
+									{companyName}
+								</p>
+							{/if}
 						</div>
 						<div class="flex flex-wrap gap-1">
 							<span

@@ -7,7 +7,7 @@ const work = [
 		locationType: 'Remote/Hybrid',
 		duration: 'Mar 2024 - Present',
 		isCurrentlyWorking: true,
-		website: 'https://openfx.com',
+		website: 'https://www.openfx.com',
 		description: '',
 		skills: [
 			'TypeScript',
@@ -31,6 +31,7 @@ const work = [
 		duration: 'Feb 2024 - Mar 2024',
 		isCurrentlyWorking: false,
 		noBullets: true,
+		website: 'https://www.mercor.com',
 		description: [
 			'As a Software Engineer, I contributed to micro-services, Frontend (React, TailwindCSS, Redux), and \
 Backend (Next.js, tRPC) for candidate and recruiter dashboards.',
@@ -124,6 +125,7 @@ user interfaces (UIs), and incorporating animations and gradients.'
 		locationType: 'On-site',
 		duration: 'Jun 2022 - Aug 2023',
 		isCurrentlyWorking: false,
+		website: 'https://www.oslash.com',
 		description:
 			'As a Product Engineer, I played a vital role in developing key features for Product-Market Fit (PMF), \
 spanning diverse technologies in both web and native development. While engaging with Frontend, \
@@ -160,6 +162,7 @@ application experience, showcasing versatility and proficiency across the techno
 		locationType: 'Hybrid',
 		duration: 'Nov 2020 - Dec 2021',
 		isCurrentlyWorking: false,
+		website: 'https://www.meebuddy.com',
 		description:
 			'As a Backend Developer in an eCommerce startup, I helped shopkeepers and restaurant managers \
 accept online orders smoothly. I contributed to building multiple dashboards for managers and led a \
