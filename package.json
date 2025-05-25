@@ -1,5 +1,6 @@
 {
-	"name": "portfolio",
+	"name": "bash",
+	"description": "A terminal-style developer portfolio, inspired by Ubuntu Bash.",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
