@@ -1,16 +1,21 @@
 # bash
 
-A developer portfolio presented in a sleek, terminal-inspired interface. Navigate through my work and background as if you're in a real shell session.
+A developer portfolio presented in a sleek, ubuntu terminal-inspired interface.
+
+Link for my bash portfolio: https://bash.5war00p.dev/
 
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
-npm run dev
+pnpm dev
 
 # or start the server and open the app in a new browser tab
-npm run dev -- --open
+pnpm dev -- --open
+
+# to expose server to our network
+pnpm dev --host
 ```
 
 ## Building
@@ -18,9 +23,14 @@ npm run dev -- --open
 To create a production version of your app:
 
 ```bash
-npm run build
+pnpm build
 ```
 
 You can preview the production build with `npm run preview`.
 
+## Deploying
+
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment and update `svelete.config.js`.
+
+Also, the `*.json` files in `src/lib/data` are gitignored, create your own file as per the typescript schema give in respective `src/lib/data/*.ts` files.
+
