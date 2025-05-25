@@ -1,6 +1,6 @@
 export enum COMMANDS {
 	EMPTY = '',
-	ABOUT = 'about',
+	WHOAMI = 'whoami',
 	ACADEMICS = 'academics',
 	WORK = 'work',
 	OSS = 'oss',

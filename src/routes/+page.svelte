@@ -13,7 +13,7 @@
 
 {#if $query === COMMANDS.ACADEMICS}
 	<Academics />
-{:else if $query === COMMANDS.ABOUT}
+{:else if $query === COMMANDS.WHOAMI}
 	<About />
 {:else if $query === COMMANDS.CONTACT}
 	<Contact />
