@@ -15,7 +15,7 @@
 			</div>
 			<div class="min-w-0 flex-1">
 				<a href={url} target="_blank" class="focus:outline-none text-white">
-					<span class="absolute inset-0" aria-hidden="true" />
+					<span class="absolute inset-0" aria-hidden="true" ></span>
 					<p class="text-xl sm:text-2xl font-semibold">{brand}</p>
 					<p class="text-base sm:text-xl font-medium">{handler}</p>
 				</a>

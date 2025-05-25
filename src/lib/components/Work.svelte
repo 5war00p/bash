@@ -10,7 +10,7 @@
 					<div
 						class="absolute left-2 top-12 w-6 justify-center -bottom-14 hidden sm:flex"
 					>
-						<div class="w-1 rounded-lg bg-gray-200" />
+						<div class="w-1 rounded-lg bg-gray-200" ></div>
 					</div>
 				{/if}
 				<div
@@ -19,7 +19,7 @@
 					{#if isCurrentlyWorking}
 						<span
 							class="animate-ping absolute inline-flex h-7 w-7 rounded-full bg-gray-400 opacity-75"
-						/>
+						></span>
 					{/if}
 					<div
 						class="flex justify-center text-gray-400 h-6 w-6 rounded-full bg-gray-200 ring-1 ring-gray-400"

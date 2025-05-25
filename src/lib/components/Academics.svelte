@@ -10,7 +10,7 @@
 					<div
 						class="absolute left-2 top-12 w-6 justify-center -bottom-14 hidden sm:flex"
 					>
-						<div class="w-1 rounded-lg bg-gray-200" />
+						<div class="w-1 rounded-lg bg-gray-200" ></div>
 					</div>
 				{/if}
 				<div
