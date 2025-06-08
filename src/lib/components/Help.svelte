@@ -8,7 +8,7 @@
 		<span class="text-white font-bold">Command List</span>
 	</div>
 	<pre class="whitespace-pre-wrap">
-	<span class="text-green-500">$</span> about
+	<span class="text-green-500">$</span> whoami
 		About {username}
 
 	<span class="text-green-500">$</span> academics
